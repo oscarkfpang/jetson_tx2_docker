@@ -17,15 +17,21 @@ The Dockerfile is built and tested on this workstation:
 + Nvidia-docker 2
 + Nvidia-container-runtime
 
+To build this docker container, use this command:
+```
+sudo docker build -t <your Docker USERNAME>/<your Docker repo name>:<Tag> .
+(don't forget the . at the end)
+```
+
 The final container is pushed and available here:
 ```
-$ docker pull oscarkfpang/tx2_ros_noetic_tf2
+docker pull oscarkfpang/tx2_ros_noetic_tf2
 ```
 
 ## To Execute on TX2
 On a newly flashed Jetson TX2 with JetPack 4.6 or above, run the following:
 ```
-$ docker run -it --runtime nvidia oscarkfpang/tx2_ros_noetic_tf2:tf2.5_jp4.6
+docker run -it --runtime nvidia oscarkfpang/tx2_ros_noetic_tf2:tf2.5_jp4.6
 ```
 
 
