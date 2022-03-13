@@ -20,8 +20,9 @@ The Dockerfile is built and tested on this workstation:
 To build this docker container, use this command:
 ```
 sudo docker build -t <your Docker USERNAME>/<your Docker repo name>:<Tag> .
-(don't forget the . at the end)
 ```
+(don't forget the . at the end)
+
 
 The final container is pushed and available here:
 ```
