@@ -6,7 +6,7 @@ This Dockerfile creates container with ROS-Noetic and Tensorflow 2.5 under Pytho
 ## The Process
 The container is targeted to run on Jetson TX2 with AArch64 platform and CUDA support. The container is built on x86 PC using [qemu](https://www.qemu.org/). A number of resources have been referred to create this Dockerfile for build process:
 + https://github.com/dusty-nv/jetson-containers
-+ + https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson (Please carefully read the *Troubleshooting* section and make sure you are free of errors before building through qemu.
++ https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson (Please carefully read the *Troubleshooting* section and make sure you are free of errors before building through qemu.
 
 ## Build Conditions
 The Dockerfile is built and tested on this workstation:
